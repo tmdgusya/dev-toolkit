@@ -12,11 +12,11 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { NavBar } from './navbar/Navbar';
 
-const pages = ['JSON', 'Notification', 'Task'];
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
+  const pages = ['JSON', 'Notification', 'Task'];
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     console.log('clicked11!');
@@ -50,7 +50,6 @@ function ResponsiveAppBar() {
           >
             DevTools
           </Typography>
-
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size='large'
